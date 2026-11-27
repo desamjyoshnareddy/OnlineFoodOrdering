@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Online Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="logo">🍽️ Foodie</div>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#restaurants">Restaurants</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="order-btn" onclick="showMessage()">
+            Order Now
+        </button>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div>
+            <h1>Discover Delicious Food!</h1>
+            <p>Order your favourite food from the best restaurants near you.</p>
+            <a href="#restaurants" class="explore-btn">Explore Restaurants</a>
+        </div>
+        <div class="hero-image">🍕 🍔 🍟</div>
+    </section>
+
+    <!-- Food Categories -->
+    <section class="categories" id="categories">
+        <h2>Food Categories</h2>
+
+        <div class="category-list">
+            <div class="category">🍕<p>Pizza</p></div>
+            <div class="category">🍔<p>Burgers</p></div>
+            <div class="category">🍜<p>Noodles</p></div>
+            <div class="category">🍰<p>Desserts</p></div>
+            <div class="category">🥗<p>Healthy Food</p></div>
+        </div>
+    </section>
+
+    <!-- Restaurant Listing -->
+    <section class="restaurants" id="restaurants">
+        <h2>Popular Restaurants</h2>
+        <p class="subtitle">Choose your favourite restaurant</p>
+
+        <div class="restaurant-grid">
+
+            <div class="restaurant-card">
+                <div class="food-image">🍕</div>
+                <div class="card-content">
+                    <h3>Pizza Palace</h3>
+                    <p>Italian • Pizza • Fast Food</p>
+                    <p>⭐ 4.5 | 25-30 min</p>
+                    <button onclick="orderFood('Pizza Palace')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="food-image">🍔</div>
+                <div class="card-content">
+                    <h3>Burger House</h3>
+                    <p>Burgers • Sandwiches</p>
+                    <p>⭐ 4.3 | 20-25 min</p>
+                    <button onclick="orderFood('Burger House')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="food-image">🍛</div>
+                <div class="card-content">
+                    <h3>Spice Kitchen</h3>
+                    <p>Indian • Biryani • Curry</p>
+                    <p>⭐ 4.7 | 30-35 min</p>
+                    <button onclick="orderFood('Spice Kitchen')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="food-image">🍜</div>
+                <div class="card-content">
+                    <h3>Noodle World</h3>
+                    <p>Chinese • Noodles • Momos</p>
+                    <p>⭐ 4.2 | 20-30 min</p>
+                    <button onclick="orderFood('Noodle World')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="food-image">🌮</div>
+                <div class="card-content">
+                    <h3>Mexican Treat</h3>
+                    <p>Mexican • Tacos • Wraps</p>
+                    <p>⭐ 4.4 | 25-30 min</p>
+                    <button onclick="orderFood('Mexican Treat')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="food-image">🍰</div>
+                <div class="card-content">
+                    <h3>Sweet Corner</h3>
+                    <p>Desserts • Cakes • Ice Cream</p>
+                    <p>⭐ 4.6 | 15-20 min</p>
+                    <button onclick="orderFood('Sweet Corner')">Order Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>🍽️ Foodie</h3>
+        <p>Delicious food delivered to your doorstep.</p>
+        <p>© 2026 Foodie. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
